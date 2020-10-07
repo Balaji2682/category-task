@@ -1,0 +1,50 @@
+<div class="ui visible left sidebar vertical menu">
+  <ul class="list">
+    <% Category.roots.each do |category| %>
+      <li value="*">
+        <%= link_to category.name, category, :class => "item" %>
+        <% if category.children.present? %>
+          <ul>
+            <% category.children.each do |sub| %>
+              <li value="-"> <%= link_to sub.name, sub, :class => "item" %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="pusher " id='container' style='height:500px;width:400px;'>
+  <p id="notice"><%= notice %></p>
+
+  <table class="ui olive celled definition table centered">
+    <tr>
+      <td>Name</td>
+      <td><%= @category.name %></td>
+    </tr>
+    <tr>
+      <td>Summary</td>
+      <td><%= @category.summary %></td>
+    </tr>
+
+    <tr>
+      <td>Ancestry</td>
+      <td>
+        <% @category&.ancestors.each do |ans| %>
+          <%= ans.name %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <button class="ui left labeled icon button">
+    <i class="arrow left icon"></i>
+    <%= link_to 'Back', categories_path %>
+  </button>
+
+  <button class="ui right labeled icon button">
+    <i class="edit icon"></i>
+    <%= link_to 'Edit', edit_category_path(@category) %>
+  </button>
+</div>
