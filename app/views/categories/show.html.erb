@@ -1,6 +1,6 @@
 <div class="ui visible left sidebar vertical menu">
   <ul class="list">
-    <% Category.each do |category| %>
+    <% Category.all.each do |category| %>
       <li value="*">
         <%= link_to category.name, category, :class => "item" %>
         <% if category.children.present? %>
