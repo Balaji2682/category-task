@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d486cda9-b5b3-466f-bd36-4cf0d36fe4fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/models/category_relator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20201008192207_create_category_relators.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/category_relators.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/category_relator_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/categories_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/categories_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/categories/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +135,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602012298406</updated>
-      <workItem from="1602012299807" duration="21852000" />
+      <workItem from="1602012299807" duration="22587000" />
+      <workItem from="1602184435610" duration="6886000" />
     </task>
     <task id="LOCAL-00001" summary="Working parent child category task">
       <created>1602080563352</created>
@@ -137,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602080563352</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="domain pointed to index">
+      <created>1602083742073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602083742073</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,17 +161,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Working parent child category task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working parent child category task" />
+    <MESSAGE value="domain pointed to index" />
+    <option name="LAST_COMMIT_MESSAGE" value="domain pointed to index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="288" y="192" key="#Notifications" timestamp="1602013400114">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="288" y="192" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1602013400114" />
-    <state x="209" y="0" key="CommitChangelistDialog2" timestamp="1602080559019">
+    <state x="209" y="0" key="CommitChangelistDialog2" timestamp="1602083740626">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="209" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602080559019" />
+    <state x="209" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602083740626" />
     <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1602056261021">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -173,13 +189,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602056261021" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1602080573229">
+    <state x="263" y="108" key="IDE.errors.dialog" timestamp="1602186103229">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602080573229" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1602083345147">
+    <state x="263" y="108" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1602186103229" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1602083796405">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1602083345147" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602083796405" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1602188573192">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1602188573192" />
   </component>
 </project>

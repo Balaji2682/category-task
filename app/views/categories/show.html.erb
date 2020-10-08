@@ -29,11 +29,9 @@
     </tr>
 
     <tr>
-      <td>Parent</td>
+      <td>Children</td>
       <td>
-        <% @category&.ancestors.each do |ans| %>
-          <%= ans.name %>
-        <% end %>
+        <%= list_children(@category) %>
       </td>
     </tr>
   </table>
